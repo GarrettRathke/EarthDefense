@@ -1,4 +1,4 @@
-# EarthInvaderz
+# EarthDefense
 A Project for Dad and Son to Learn Together
 
 ________________________________________________________
@@ -30,7 +30,7 @@ Goals for Ethan (son)
 	Ethan is going to type information about each
 	civilization that he researches. Garrett is 
 	going to build (with Ethan's help) a website to 
-	host the game and various informational webpages 
+	house the game and various informational webpages 
 	about the different civilizations.
 4. Gain confidence:
 	Ethan will have something cool to show his friends
@@ -38,11 +38,11 @@ Goals for Ethan (son)
 	use. He'll be able to explain some pretty dang complex
 	technological concepts! And he will feel confident
 	enough to explore things on his own.
+5. HAVE FUN!!! :-)
 ________________________________________________________
 
 Tech Stack
-
-Development: 
+Development:	
 	+ home-made custom PC (built with Ethan) 
 	+ node.js for the game
 	+ HTML, CSS, and maybe JS for Ethan's informational web pages
@@ -52,17 +52,4 @@ Development:
 Deployment:
 	+ heroku 
 	+ postgres
-
-
-
-
-
-
-
-
-
-
-
-
-
 
