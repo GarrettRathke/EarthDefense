@@ -48,7 +48,7 @@ Development:
 	+ HTML, CSS, and maybe JS for Ethan's informational web pages
 	+ web storm IDE
 	+ git and zenhub
-	+ WebGL 3D graphics
+	+ babylon.js graphics
 Deployment:
 	+ heroku 
 	+ postgres
