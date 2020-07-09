@@ -1,5 +1,7 @@
 {
-"name": "EarthDefense",
+  "name": "EarthDefense",
   "version": "1.0.0",
   "description": "Earth Defense web browser game"
+  "license:" "Open Source"
+  "main": "app.js"
 }
