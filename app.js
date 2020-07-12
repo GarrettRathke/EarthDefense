@@ -1,12 +1,13 @@
-const http = require('http');
-    fs = require('fs');
-fs.readFile('/index.html', function (err, html) {
-    if (err) {
-        throw err; 
-    }       
-    http.createServer(function(request, response) {  
-        response.writeHeader(200, {"Content-Type": "text/html"});  
-        response.write(html);  
-        response.end();  
-    }).listen(80);
-});
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   app.js
+#
+# Untracked files:
+#	Ethan_Research.odt
+#
