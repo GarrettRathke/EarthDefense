@@ -1,7 +1,19 @@
 {
-  "name": "EarthDefense",
+  "name": "earthdefense",
   "version": "1.0.0",
-  "description": "Earth Defense web browser game",
-  "license": "Open Source",
-  "main": "main.js"
+  "description": "A Project for dad and kids to learn together",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarrettRathke/EarthDefense.git"
+  },
+  "author": "Garrett Rathke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GarrettRathke/EarthDefense/issues"
+  },
+  "homepage": "https://github.com/GarrettRathke/EarthDefense#readme"
 }
