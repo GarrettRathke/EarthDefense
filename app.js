@@ -1,24 +1,21 @@
-var http = require('http');
+var http = require("http");
 var fs = require('fs');
-const hostname = '127.0.0.1';
-const port = 3000;
+var port = 3000;
+var serverUrl = "127.0.0.1";
 
-const server = http.createServer((req, res) => {
-  fs.readFile(__dirname + 'index.html', function(error, data) {
-    if(error) {
-      res.writeHead(404);
-      res.write(error);
-      res.end();
-    } else {
-      res.writeHead(200, {
-        'Content-Type': 'text/html'
-      });
-      res.write(data);
-      res.end();
-    }
-  });
+var server = http.createServer(function(req, res) {
+  if(req.url == "/index.html") {
+    fs.readFile("index.html", function(err, text){
+      res.setHeader("Content-Type", "text/html");
+      res.end(text);
+    });
+    return;
+  }
+
+  res.setHeader("Content-Type", "text/html");
+  res.end();
+
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+console.log("Starting web server at " + serverUrl + ":" + port);
+server.listen(port, serverUrl);
