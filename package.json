@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GarrettRathke/EarthDefense/issues"
   },
-  "homepage": "https://github.com/GarrettRathke/EarthDefense#readme"
+  "homepage": "https://github.com/GarrettRathke/EarthDefense#readme",
+  "dependencies": {
+    "phaser": "^3.24.1"
+  }
 }
