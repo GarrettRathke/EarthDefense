@@ -1,6 +1,6 @@
 var http = require("http");
 var fs = require('fs');
-var port = 3000;
+const PORT = process.env.PORT || 3000;
 var serverUrl = "127.0.0.1";
 
 var server = http.createServer(function(req, res) {
@@ -17,5 +17,5 @@ var server = http.createServer(function(req, res) {
 
 });
 
-console.log("Starting web server at " + serverUrl + ":" + port);
-server.listen(port, serverUrl);
+console.log("Starting web server at " + serverUrl + ":" + ${ PORT });
+server.listen(PORT, serverUrl);
