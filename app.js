@@ -16,5 +16,5 @@ var server = http.createServer(function(req, res) {
 
 });
 
-console.log("Starting web server at " + ":" + ${ PORT });
+console.log("Starting web server at " + ":" + PORT);
 server.listen(PORT);
