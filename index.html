@@ -10,13 +10,13 @@
 
         app.config(function($routeProvider) {
     $routeProvider
-    .when("/", {
+    .when("/game", {
         templateUrl : "splashPage.html"
     })
     .when("/history", {
         templateUrl : "History/apacheHistory.html"
     }).otherwise({
-        redirectTo: '/'
+        redirectTo: '/game'
     });
 });
     </script>
@@ -27,11 +27,14 @@
     <h1>Welcome to Earth Defense!</h1>
     <p>This is a place to learn coding and history. So click around and have fun learning!</p>
 
-    <!-- Link to Default Splash Page / Game Area -->
-    <p href="#/!">Game</p>
-
-    <!-- Links to History Pages -->
-    <p href="#!history">History</p>
+    <ul>
+        <li>
+        <a href="#/game">Game</a>
+        </li>
+        <li>
+        <a href="#/history">History</a>
+        </li>
+    </ul>
 
     <!-- TEMPLATE CONTENT GOES HERE -->
     <div ng-view></div>
