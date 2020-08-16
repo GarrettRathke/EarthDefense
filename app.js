@@ -1,21 +1,12 @@
 var http = require("http");
 var fs = require('fs');
 const path = require('path');
+
+// this is to run under heroku hosting
 const PORT = process.env.PORT || 80;
 
-//var server = http.createServer(function(req, res) {
-//  if(req.url == path.join(__dirname + '/index.html')) {
-//    fs.readFile(path.join(__dirname + '/index.html'), function(err, text){
-//      res.setHeader("Content-Type", "text/html");
-//      res.end(text);
-//    });
-//    return;
-// }
-
-//  res.setHeader("Content-Type", "text/html");
-//  res.end();
-
-//});
+// uncomment this and run <node app.js> to run as local host
+//const PORT = 5000;
 
 fs.readFile('./index.html', function (err, html) {
   if (err) {
