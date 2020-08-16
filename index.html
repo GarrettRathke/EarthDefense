@@ -3,18 +3,9 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-</head>
-<body ng-app="earthDefenseApp">
-
-    <!-- STATIC CONTENT GOES HERE -->
-    <h1>Welcome to Earth Defense!</h1>
-    <p>This is a place to learn coding and history. So click around and have fun learning!</p>
-
-    <!-- VARIABLE CONTENT GOES HERE -->
-    <div ng-view></div>
 
     <!-- SPA Navigation Script -->
-    <script>
+    <script type="text/javascript">
         var app = angular.module("earthDefenseApp", ["ngRoute"]); 
 
         app.config(function($routeProvider) {
@@ -22,11 +13,28 @@
     .when("/", {
         templateUrl : "splashPage.html"
     })
-    .when("/Apache", {
-        templateUrl : "apacheHistory.html"
+    .when("/history", {
+        templateUrl : "History/apacheHistory.html"
+    }).otherwise({
+        redirectTo: '/'
     });
 });
     </script>
+</head>
+<body ng-app="earthDefenseApp">
+
+    <!-- STATIC CONTENT GOES HERE -->
+    <h1>Welcome to Earth Defense!</h1>
+    <p>This is a place to learn coding and history. So click around and have fun learning!</p>
+
+    <!-- Link to Default Splash Page / Game Area -->
+    <p href="#/">Game</p>
+
+    <!-- Links to History Pages -->
+    <p href="#/history">History</p>
+
+    <!-- TEMPLATE CONTENT GOES HERE -->
+    <div ng-view></div>
 
 </body>
 </html>
